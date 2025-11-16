@@ -1,0 +1,125 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    sans-serif;
+  background: radial-gradient(circle at top, #1f2937 0, #020617 50%, #000 100%);
+  color: #e5e7eb;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 16px;
+}
+
+/* Ytre kort / boks */
+.container {
+  background: rgba(15, 23, 42, 0.95);
+  border-radius: 16px;
+  padding: 24px 28px 28px;
+  max-width: 380px;
+  width: 100%;
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.7);
+  border: 1px solid rgba(148, 163, 184, 0.35);
+}
+
+/* Tittel og tekst */
+h1 {
+  margin: 0 0 6px;
+  text-align: center;
+  font-size: 1.8rem;
+  letter-spacing: 0.03em;
+}
+
+.subtext {
+  margin: 0 0 18px;
+  text-align: center;
+  font-size: 0.95rem;
+  color: #9ca3af;
+}
+
+/* Skjema */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+label {
+  font-size: 0.9rem;
+  color: #d1d5db;
+}
+
+input[type="text"],
+input[type="password"] {
+  padding: 8px 10px;
+  border-radius: 8px;
+  border: 1px solid #4b5563;
+  background: #020617;
+  color: #e5e7eb;
+  font-size: 0.95rem;
+  outline: none;
+  transition: border-color 0.15s ease, box-shadow 0.15s ease,
+    background 0.15s ease;
+}
+
+input[type="text"]::placeholder,
+input[type="password"]::placeholder {
+  color: #6b7280;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus {
+  border-color: #38bdf8;
+  box-shadow: 0 0 0 1px rgba(56, 189, 248, 0.5);
+  background: #02081a;
+}
+
+/* Knapp */
+button[type="submit"] {
+  margin-top: 4px;
+  padding: 9px 12px;
+  border-radius: 999px;
+  border: none;
+  background: linear-gradient(135deg, #22c55e, #16a34a);
+  color: #f9fafb;
+  font-weight: 600;
+  font-size: 0.98rem;
+  cursor: pointer;
+  transition: transform 0.1s ease, box-shadow 0.1s ease, opacity 0.1s ease;
+  box-shadow: 0 8px 18px rgba(22, 163, 74, 0.45);
+}
+
+button[type="submit"]:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 10px 22px rgba(22, 163, 74, 0.6);
+}
+
+button[type="submit"]:active {
+  transform: translateY(0);
+  box-shadow: 0 4px 10px rgba(22, 163, 74, 0.5);
+  opacity: 0.95;
+}
+
+/* Feilmelding */
+#error-message {
+  margin-top: 10px;
+  min-height: 1.2em;
+  font-size: 0.9rem;
+  color: #f97373; /* rød-ish */
+  text-align: center;
+}
+
+/* Litt responsiv justering for veldig små skjermer */
+@media (max-width: 400px) {
+  .container {
+    padding: 20px 16px 22px;
+  }
+
+  h1 {
+    font-size: 1.6rem;
+  }
+}
