@@ -1,20 +1,18 @@
-const express = require('express');
+const express = require("express");
 const router = express.Router();
-const path = require('path')
+const path = require("path");
 
-const {getalle} = require("./database");
-const { get } = require('http');
+const { getalle } = require("./database");
+const { get } = require("http");
 
-const publicvei = path.join(__dirname, 'Front')
+const publicvei = path.join(__dirname, "Front");
 
-router.get('/leaderboard', (req,res) => {
-    res.sendFile(path.join(publicvei,'leaderboard.html'));
-    }
-)
+router.get("/leaderboard", (req, res) => {
+  res.sendFile(path.join(publicvei, "leaderboard.html"));
+});
 
 // ✅ POST: henter data for leaderboard (topp 5 + rundt brukernavn)
-router.post('/getleaderboard', (req, res) => {
-
+router.post("/getleaderboard", (req, res) => {
   // Hent brukernavn fra session (ikke fra body)
   const brukernavn = req.session?.username;
 
@@ -31,28 +29,27 @@ router.post('/getleaderboard', (req, res) => {
 module.exports = router;
 
 function gettopp5() {
-    let liste = getalle();
-    let nyliste = [];
-    for(let i= 0; i<5; i++) {
-        nyliste[i] = liste[i];
-    }
-    return nyliste
+  let liste = getalle();
+  let nyliste = [];
+  for (let i = 0; i < 5; i++) {
+    nyliste[i] = liste[i];
+  }
+  return nyliste;
 }
 
 function getrundt(brukernavn) {
-  
-    let list = getalle(); // sortert liste
-    let i = list.findIndex(x => x.Brukernavn === brukernavn);
+  let list = getalle(); // sortert liste
+  let i = list.findIndex((x) => x.Brukernavn === brukernavn);
 
-    if (i === -1 ) {
-        return null; // Brukeren finnes ikke
-    }
+  if (i === -1) {
+    return null; // Brukeren finnes ikke
+  }
 
-    return {
-        over: list[i - 1] || null,
-        bruker: list[i] || null,
-        under: list[i + 1] || null,
-        rank: i + 1
-    };
+  return {
+    over: list[i - 1] || null,
+    bruker: list[i] || null,
+    under: list[i + 1] || null,
+    rank: i + 1,
+  };
 }
-
+console.log(getrundt("mvp01"));

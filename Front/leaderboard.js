@@ -3,7 +3,7 @@ async function hentLeaderboard() {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
-    }
+    },
   });
 
   if (!res.ok) {
@@ -32,7 +32,8 @@ function renderRundt(rundt, brukernavn) {
   container.innerHTML = "";
 
   if (!brukernavn) {
-    container.innerHTML = "<p>Du må være logget inn for å se plasseringen din.</p>";
+    container.innerHTML =
+      "<p>Du må være logget inn for å se plasseringen din.</p>";
     return;
   }
 
@@ -41,25 +42,25 @@ function renderRundt(rundt, brukernavn) {
     return;
   }
 
-  function lagRad(label, entry, extra = "") {
+  function lagRad(label, entry, rank, extra = "") {
     if (!entry) return;
     const div = document.createElement("div");
     div.className = "pos-row " + extra;
     div.innerHTML = `
-      <span>${label} (#${entry.rank}) ${entry.Brukernavn}</span>
+      <span>${label} (#${rank}) ${entry.Brukernavn}</span>
       <span>${entry.Poeng} poeng</span>
     `;
     container.appendChild(div);
   }
 
-  lagRad("Over deg", rundt.over);
-  lagRad("Du", rundt.bruker, "you");
-  lagRad("Under deg", rundt.under);
+  lagRad("Over deg", rundt.over, rundt.rank - 1);
+  lagRad("Du", rundt.bruker, rundt.rank, "you");
+  lagRad("Under deg", rundt.under, rundt.rank + 1);
 }
 
 document.addEventListener("DOMContentLoaded", async () => {
   try {
-    const data = await hentLeaderboard(); 
+    const data = await hentLeaderboard();
     renderTopp5(data.topp5);
     renderRundt(data.rundt, data.brukernavn);
   } catch (err) {
