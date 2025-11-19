@@ -11,7 +11,7 @@ let x = 5;
 let y = 3;
 console.log(x + y);`,
     fasit: "8",
-    poeng: 5,
+    poeng: 1,
     vanskelighet: "easy",
     hovedtema: "Variabler",
     flagg: "FLAG{intro_variabler_riktig}",
@@ -32,7 +32,7 @@ if (alder >= 18) {
   tekst = "mindreårig";
 }`,
     fasit: "mindreårig",
-    poeng: 8,
+    poeng: 1,
     vanskelighet: "easy",
     hovedtema: "Betingelser",
     flagg: "FLAG{if_conditions_clear}",
@@ -48,7 +48,7 @@ for (let i = 1; i <= 3; i++) {
   console.log(i);
 }`,
     fasit: "1 2 3",
-    poeng: 10,
+    poeng: 1,
     vanskelighet: "medium",
     hovedtema: "Løkker",
     flagg: "FLAG{loops_basic_looper}",
@@ -63,7 +63,7 @@ for (let i = 1; i <= 3; i++) {
 const tall = [10, 20, 30];
 console.log(tall[1]);`,
     fasit: "20",
-    poeng: 10,
+    poeng: 1,
     vanskelighet: "medium",
     hovedtema: "Arrays",
     flagg: "FLAG{arrays_basic_index}",
@@ -81,7 +81,7 @@ function leggSammen(a, b) {
 
 console.log(leggSammen(2, 5));`,
     fasit: "7",
-    poeng: 10,
+    poeng: 1,
     vanskelighet: "medium",
     hovedtema: "Funksjoner",
     flagg: "FLAG{functions_basic_return}",
@@ -105,7 +105,7 @@ knapp.addEventListener("click", () => {
   p.textContent = "Klikket!";
 });`,
     fasit: "Klikket!",
-    poeng: 15,
+    poeng: 1,
     vanskelighet: "hard",
     hovedtema: "DOM",
     flagg: "FLAG{dom_manipulation_click}",
@@ -127,7 +127,7 @@ for (let i = 1; i <= 5; i++) {
 
 console.log(sum);`,
     fasit: "6", // 2 + 4
-    poeng: 20,
+    poeng: 1,
     vanskelighet: "hard",
     hovedtema: "Logikk",
     flagg: "FLAG{logic_ctf_sum_even}",
@@ -146,52 +146,12 @@ for (let i = 0; i < tall.length; i++) {
   resultat = resultat * tall[i];
 }`,
     fasit: "24",
-    poeng: 25,
+    poeng: 1,
     vanskelighet: "expert",
     hovedtema: "Blandet",
     flagg: "FLAG{bonus_extra_24}",
   },
 
-  "if-conditions2": {
-    id: "if-conditions2",
-    tittel: "If-setninger",
-    kortBeskrivelse: "if / else, enkel logikk",
-    beskrivelse: `Hva blir verdien til variabelen "tekst"?
-
-let alder = 17;
-let tekst;
-
-if (alder >= 18) {
-  tekst = "voksen";
-} else {
-  tekst = "mindreårig";
-}`,
-    fasit: "mindreårig",
-    poeng: 8,
-    vanskelighet: "easy",
-    hovedtema: "Betingelser",
-    flagg: "FLAG{if_conditions_clear}",
-  },
-  "if-conditions3": {
-    id: "if-conditions3",
-    tittel: "If-setninger",
-    kortBeskrivelse: "if / else, enkel logikk",
-    beskrivelse: `Hva blir verdien til variabelen "tekst"?
-
-let alder = 17;
-let tekst;
-
-if (alder >= 18) {
-  tekst = "voksen";
-} else {
-  tekst = "mindreårig";
-}`,
-    fasit: "mindreårig",
-    poeng: 8,
-    vanskelighet: "easy",
-    hovedtema: "Betingelser",
-    flagg: "FLAG{if_conditions_clear}",
-  },
   "intro-variabler-2": {
     id: "intro-variabler-2",
     tittel: "Variabler 2",
@@ -203,7 +163,7 @@ let b = 4;
 let c = a * b;
 console.log(c);`,
     fasit: "8",
-    poeng: 5,
+    poeng: 1,
     vanskelighet: "easy",
     hovedtema: "Variabler",
     flagg: "FLAG{intro_variabler_2}",
@@ -219,7 +179,7 @@ let x = 10;
 x = x - 3;
 console.log(x);`,
     fasit: "7",
-    poeng: 5,
+    poeng: 1,
     vanskelighet: "easy",
     hovedtema: "Variabler",
     flagg: "FLAG{intro_variabler_3}",
@@ -236,7 +196,7 @@ let etternavn = "Nordmann";
 let navn = fornavn + " " + etternavn;
 console.log(navn);`,
     fasit: "Ola Nordmann",
-    poeng: 5,
+    poeng: 1,
     vanskelighet: "easy",
     hovedtema: "Variabler",
     flagg: "FLAG{intro_variabler_4}",
@@ -253,7 +213,7 @@ let antall = 3;
 let total = pris * antall;
 console.log(total);`,
     fasit: "150",
-    poeng: 5,
+    poeng: 1,
     vanskelighet: "easy",
     hovedtema: "Variabler",
     flagg: "FLAG{intro_variabler_5}",
@@ -270,11 +230,12 @@ poeng = poeng + 10;
 poeng = poeng - 3;
 console.log(poeng);`,
     fasit: "7",
-    poeng: 5,
+    poeng: 1,
     vanskelighet: "easy",
     hovedtema: "Variabler",
     flagg: "FLAG{intro_variabler_6}",
   },
+
   "if-conditions-2": {
     id: "if-conditions-2",
     tittel: "If-setninger 2",
@@ -290,7 +251,7 @@ if (poeng >= 50) {
   status = "ikke bestått";
 }`,
     fasit: "bestått",
-    poeng: 8,
+    poeng: 1,
     vanskelighet: "easy",
     hovedtema: "Betingelser",
     flagg: "FLAG{if_conditions_2}",
@@ -311,7 +272,7 @@ if (brukernavn === "admin") {
   melding = "Vanlig bruker";
 }`,
     fasit: "Velkommen, admin",
-    poeng: 8,
+    poeng: 1,
     vanskelighet: "easy",
     hovedtema: "Betingelser",
     flagg: "FLAG{if_conditions_3}",
@@ -334,7 +295,7 @@ if (temp > 20) {
   kategori = "minusgrader";
 }`,
     fasit: "kaldt",
-    poeng: 8,
+    poeng: 1,
     vanskelighet: "easy",
     hovedtema: "Betingelser",
     flagg: "FLAG{if_conditions_4}",
@@ -356,7 +317,7 @@ if (harBruker && harPassord) {
   kanLoggeInn = "nei";
 }`,
     fasit: "nei",
-    poeng: 8,
+    poeng: 1,
     vanskelighet: "easy",
     hovedtema: "Betingelser",
     flagg: "FLAG{if_conditions_5}",
@@ -377,11 +338,12 @@ if (tall % 2 === 0) {
   typeTall = "oddetall";
 }`,
     fasit: "oddetall",
-    poeng: 8,
+    poeng: 1,
     vanskelighet: "easy",
     hovedtema: "Betingelser",
     flagg: "FLAG{if_conditions_6}",
   },
+
   "loops-basic-2": {
     id: "loops-basic-2",
     tittel: "Løkker 2",
@@ -392,7 +354,7 @@ for (let i = 3; i >= 1; i--) {
   console.log(i);
 }`,
     fasit: "3 2 1",
-    poeng: 10,
+    poeng: 1,
     vanskelighet: "medium",
     hovedtema: "Løkker",
     flagg: "FLAG{loops_basic_2}",
@@ -412,7 +374,7 @@ for (let i = 1; i <= 4; i++) {
 
 console.log(sum);`,
     fasit: "10",
-    poeng: 10,
+    poeng: 1,
     vanskelighet: "medium",
     hovedtema: "Løkker",
     flagg: "FLAG{loops_basic_3}",
@@ -431,7 +393,7 @@ for (let i = 1; i <= 5; i++) {
   console.log(i);
 }`,
     fasit: "1 2 4 5",
-    poeng: 10,
+    poeng: 1,
     vanskelighet: "medium",
     hovedtema: "Løkker",
     flagg: "FLAG{loops_basic_4}",
@@ -450,7 +412,7 @@ for (let i = 1; i <= 5; i++) {
   console.log(i);
 }`,
     fasit: "1 2",
-    poeng: 10,
+    poeng: 1,
     vanskelighet: "medium",
     hovedtema: "Løkker",
     flagg: "FLAG{loops_basic_5}",
@@ -466,11 +428,12 @@ for (let i = 0; i <= 6; i = i + 2) {
   console.log(i);
 }`,
     fasit: "0 2 4 6",
-    poeng: 10,
+    poeng: 1,
     vanskelighet: "medium",
     hovedtema: "Løkker",
     flagg: "FLAG{loops_basic_6}",
   },
+
   "arrays-basic-2": {
     id: "arrays-basic-2",
     tittel: "Lister 2",
@@ -480,7 +443,7 @@ for (let i = 0; i <= 6; i = i + 2) {
 const dyr = ["katt", "hund", "fugl"];
 console.log(dyr.length);`,
     fasit: "3",
-    poeng: 10,
+    poeng: 1,
     vanskelighet: "medium",
     hovedtema: "Arrays",
     flagg: "FLAG{arrays_basic_2}",
@@ -495,7 +458,7 @@ console.log(dyr.length);`,
 const farger = ["rød", "grønn", "blå"];
 console.log(farger[2]);`,
     fasit: "blå",
-    poeng: 10,
+    poeng: 1,
     vanskelighet: "medium",
     hovedtema: "Arrays",
     flagg: "FLAG{arrays_basic_3}",
@@ -511,7 +474,7 @@ const tall = [1, 2, 3];
 tall[1] = 5;
 console.log(tall[1]);`,
     fasit: "5",
-    poeng: 10,
+    poeng: 1,
     vanskelighet: "medium",
     hovedtema: "Arrays",
     flagg: "FLAG{arrays_basic_4}",
@@ -527,7 +490,7 @@ const tall = [10, 20];
 tall.push(30);
 console.log(tall.length);`,
     fasit: "3",
-    poeng: 10,
+    poeng: 1,
     vanskelighet: "medium",
     hovedtema: "Arrays",
     flagg: "FLAG{arrays_basic_5}",
@@ -543,11 +506,12 @@ const navn = ["Ida", "Per", "Ali", "Mia"];
 const siste = navn[navn.length - 1];
 console.log(siste);`,
     fasit: "Mia",
-    poeng: 10,
+    poeng: 1,
     vanskelighet: "medium",
     hovedtema: "Arrays",
     flagg: "FLAG{arrays_basic_6}",
   },
+
   "functions-basic-2": {
     id: "functions-basic-2",
     tittel: "Funksjoner 2",
@@ -560,7 +524,7 @@ function gangerTo(tall) {
 
 console.log(gangerTo(4));`,
     fasit: "8",
-    poeng: 10,
+    poeng: 1,
     vanskelighet: "medium",
     hovedtema: "Funksjoner",
     flagg: "FLAG{functions_basic_2}",
@@ -578,7 +542,7 @@ function lagHilsen(fornavn, alder) {
 
 console.log(lagHilsen("Oda", 16));`,
     fasit: "Hei Oda, du er 16 år",
-    poeng: 10,
+    poeng: 1,
     vanskelighet: "medium",
     hovedtema: "Funksjoner",
     flagg: "FLAG{functions_basic_3}",
@@ -600,7 +564,7 @@ function plussTo(tall) {
 
 console.log(plussTo(5));`,
     fasit: "7",
-    poeng: 10,
+    poeng: 1,
     vanskelighet: "medium",
     hovedtema: "Funksjoner",
     flagg: "FLAG{functions_basic_4}",
@@ -622,7 +586,7 @@ function erMynt(verdi) {
 
 console.log(erMynt("kron"));`,
     fasit: "Norsk mynt",
-    poeng: 10,
+    poeng: 1,
     vanskelighet: "medium",
     hovedtema: "Funksjoner",
     flagg: "FLAG{functions_basic_5}",
@@ -641,11 +605,12 @@ function tilMeter(cm) {
 let resultat = tilMeter(250);
 console.log(resultat);`,
     fasit: "2.5",
-    poeng: 10,
+    poeng: 1,
     vanskelighet: "medium",
     hovedtema: "Funksjoner",
     flagg: "FLAG{functions_basic_6}",
   },
+
   "dom-manipulation-2": {
     id: "dom-manipulation-2",
     tittel: "DOM & events 2",
@@ -666,7 +631,7 @@ knapp.addEventListener("click", () => {
   p.textContent = antall;
 });`,
     fasit: "2",
-    poeng: 15,
+    poeng: 1,
     vanskelighet: "hard",
     hovedtema: "DOM",
     flagg: "FLAG{dom_manipulation_2}",
@@ -692,7 +657,7 @@ knapp.addEventListener("click", () => {
   p.textContent = "Hei " + input.value;
 });`,
     fasit: "Hei Ola",
-    poeng: 15,
+    poeng: 1,
     vanskelighet: "hard",
     hovedtema: "DOM",
     flagg: "FLAG{dom_manipulation_3}",
@@ -720,7 +685,7 @@ knapp.addEventListener("click", () => {
   }
 });`,
     fasit: "Av",
-    poeng: 15,
+    poeng: 1,
     vanskelighet: "hard",
     hovedtema: "DOM",
     flagg: "FLAG{dom_manipulation_4}",
@@ -744,7 +709,7 @@ knapp.addEventListener("click", () => {
   p.textContent = p.textContent + "x";
 });`,
     fasit: "xxx",
-    poeng: 15,
+    poeng: 1,
     vanskelighet: "hard",
     hovedtema: "DOM",
     flagg: "FLAG{dom_manipulation_5}",
@@ -770,11 +735,12 @@ knapp.addEventListener("click", () => {
   p.textContent = "Alder: " + input.value;
 });`,
     fasit: "Alder: 18",
-    poeng: 15,
+    poeng: 1,
     vanskelighet: "hard",
     hovedtema: "DOM",
     flagg: "FLAG{dom_manipulation_6}",
   },
+
   "logic-ctf-2": {
     id: "logic-ctf-2",
     tittel: "Mini-CTF logikk 2",
@@ -791,7 +757,7 @@ for (let i = 1; i <= 7; i++) {
 
 console.log(sum);`,
     fasit: "16", // 1+3+5+7
-    poeng: 20,
+    poeng: 1,
     vanskelighet: "hard",
     hovedtema: "Logikk",
     flagg: "FLAG{logic_ctf_2}",
@@ -814,7 +780,7 @@ for (let i = 0; i < tall.length; i++) {
 
 console.log(teller);`,
     fasit: "4",
-    poeng: 20,
+    poeng: 1,
     vanskelighet: "hard",
     hovedtema: "Logikk",
     flagg: "FLAG{logic_ctf_3}",
@@ -836,7 +802,7 @@ for (let i = 1; i <= 4; i++) {
 
 console.log(produkt);`,
     fasit: "8", // 1*2*4
-    poeng: 20,
+    poeng: 1,
     vanskelighet: "hard",
     hovedtema: "Logikk",
     flagg: "FLAG{logic_ctf_4}",
@@ -860,7 +826,7 @@ for (let i = 0; i < 2; i++) {
 
 console.log(tekst);`,
     fasit: "AAABB",
-    poeng: 20,
+    poeng: 1,
     vanskelighet: "hard",
     hovedtema: "Logikk",
     flagg: "FLAG{logic_ctf_5}",
@@ -885,11 +851,12 @@ for (let i = 0; i < svar.length; i++) {
 
 console.log(poeng);`,
     fasit: "4", // -2 -2 +10 -2
-    poeng: 20,
+    poeng: 1,
     vanskelighet: "hard",
     hovedtema: "Logikk",
     flagg: "FLAG{logic_ctf_6}",
   },
+
   "bonus-extra-2": {
     id: "bonus-extra-2",
     tittel: "Bonus-oppgave 2",
@@ -905,7 +872,7 @@ for (let i = 0; i < tall.length; i++) {
 
 console.log(resultat);`,
     fasit: "12",
-    poeng: 25,
+    poeng: 1,
     vanskelighet: "expert",
     hovedtema: "Blandet",
     flagg: "FLAG{bonus_extra_2}",
@@ -928,7 +895,7 @@ for (let i = 0; i < klikk.length; i++) {
   }
 }`,
     fasit: "12", // 5 -3 +5 +5
-    poeng: 25,
+    poeng: 1,
     vanskelighet: "expert",
     hovedtema: "Blandet",
     flagg: "FLAG{bonus_extra_3}",
@@ -950,7 +917,7 @@ for (let i = 0; i < 2; i++) {
 
 console.log(teller);`,
     fasit: "6",
-    poeng: 25,
+    poeng: 1,
     vanskelighet: "expert",
     hovedtema: "Blandet",
     flagg: "FLAG{bonus_extra_4}",
@@ -975,7 +942,7 @@ for (let i = 0; i < liste.length; i++) {
 
 console.log(sum);`,
     fasit: "12",
-    poeng: 25,
+    poeng: 1,
     vanskelighet: "expert",
     hovedtema: "Blandet",
     flagg: "FLAG{bonus_extra_5}",
@@ -999,10 +966,507 @@ for (let i = 0; i < tall.length; i++) {
 
 console.log(funnet);`,
     fasit: "9",
-    poeng: 25,
+    poeng: 1,
     vanskelighet: "expert",
     hovedtema: "Blandet",
     flagg: "FLAG{bonus_extra_6}",
+  },
+  "objects-basic-1": {
+    id: "objects-basic-1",
+    tittel: "Objekter 1",
+    kortBeskrivelse: "lage og lese objekt",
+    beskrivelse: `Hva skriver denne koden ut?
+
+const person = {
+  navn: "Ola",
+  alder: 17
+};
+
+console.log(person.navn);`,
+    fasit: "Ola",
+    poeng: 1,
+    vanskelighet: "medium",
+    hovedtema: "Objekter",
+    flagg: "FLAG{objects_basic_1}",
+  },
+
+  "objects-basic-2": {
+    id: "objects-basic-2",
+    tittel: "Objekter 2",
+    kortBeskrivelse: "endre egenskap på objekt",
+    beskrivelse: `Hva skriver denne koden ut?
+
+const spiller = {
+  navn: "Ida",
+  poeng: 0
+};
+
+spiller.poeng = spiller.poeng + 10;
+
+console.log(spiller.poeng);`,
+    fasit: "10",
+    poeng: 1,
+    vanskelighet: "medium",
+    hovedtema: "Objekter",
+    flagg: "FLAG{objects_basic_2}",
+  },
+
+  "objects-basic-3": {
+    id: "objects-basic-3",
+    tittel: "Objekter 3",
+    kortBeskrivelse: "legge til ny egenskap",
+    beskrivelse: `Hva skriver denne koden ut?
+
+const bruker = {
+  brukernavn: "admin"
+};
+
+bruker.rolle = "superadmin";
+
+console.log(bruker.rolle);`,
+    fasit: "superadmin",
+    poeng: 1,
+    vanskelighet: "medium",
+    hovedtema: "Objekter",
+    flagg: "FLAG{objects_basic_3}",
+  },
+
+  "objects-basic-4": {
+    id: "objects-basic-4",
+    tittel: "Objekter 4",
+    kortBeskrivelse: "array av objekter",
+    beskrivelse: `Hva skriver denne koden ut?
+
+const varer = [
+  { navn: "Eple", pris: 10 },
+  { navn: "Banan", pris: 12 },
+  { navn: "Appelsin", pris: 15 }
+];
+
+console.log(varer[1].navn);`,
+    fasit: "Banan",
+    poeng: 1,
+    vanskelighet: "medium",
+    hovedtema: "Objekter",
+    flagg: "FLAG{objects_basic_4}",
+  },
+
+  "objects-basic-5": {
+    id: "objects-basic-5",
+    tittel: "Objekter 5",
+    kortBeskrivelse: "løkkke over array av objekter",
+    beskrivelse: `Hva skriver denne koden ut?
+
+const elever = [
+  { navn: "Ali", bestått: true },
+  { navn: "Mia", bestått: false },
+  { navn: "Per", bestått: true }
+];
+
+let teller = 0;
+
+for (let i = 0; i < elever.length; i++) {
+  if (elever[i].bestått === true) {
+    teller = teller + 1;
+  }
+}
+
+console.log(teller);`,
+    fasit: "2",
+    poeng: 1,
+    vanskelighet: "medium",
+    hovedtema: "Objekter",
+    flagg: "FLAG{objects_basic_5}",
+  },
+  "objects-nested-1": {
+    id: "objects-nested-1",
+    tittel: "Objekter i objekter 1",
+    kortBeskrivelse: "lese dypt objekt",
+    beskrivelse: `Hva skriver denne koden ut?
+
+const bruker = {
+  navn: "Ola",
+  adresse: {
+    gate: "Solstien",
+    nr: 12
+  }
+};
+
+console.log(bruker.adresse.gate);`,
+    fasit: "Solstien",
+    poeng: 1,
+    vanskelighet: "medium",
+    hovedtema: "Objekter",
+    flagg: "FLAG{objects_nested_1}",
+  },
+
+  "objects-nested-2": {
+    id: "objects-nested-2",
+    tittel: "Objekter i objekter 2",
+    kortBeskrivelse: "endre verdi dypt",
+    beskrivelse: `Hva skriver denne koden ut?
+
+const spiller = {
+  profil: {
+    navn: "Mia",
+    level: 3
+  }
+};
+
+spiller.profil.level = 4;
+
+console.log(spiller.profil.level);`,
+    fasit: "4",
+    poeng: 1,
+    vanskelighet: "medium",
+    hovedtema: "Objekter",
+    flagg: "FLAG{objects_nested_2}",
+  },
+
+  "objects-nested-3": {
+    id: "objects-nested-3",
+    tittel: "Objekter i objekter 3",
+    kortBeskrivelse: "flere nivåer",
+    beskrivelse: `Hva skriver denne koden ut?
+
+const system = {
+  server: {
+    status: {
+      online: true
+    }
+  }
+};
+
+console.log(system.server.status.online);`,
+    fasit: "true",
+    poeng: 1,
+    vanskelighet: "medium",
+    hovedtema: "Objekter",
+    flagg: "FLAG{objects_nested_3}",
+  },
+
+  "objects-nested-4": {
+    id: "objects-nested-4",
+    tittel: "Objekter i objekter 4",
+    kortBeskrivelse: "endre dyp verdi",
+    beskrivelse: `Hva skriver denne koden ut?
+
+const butikk = {
+  produkt: {
+    navn: "Laptop",
+    lager: {
+      antall: 5
+    }
+  }
+};
+
+butikk.produkt.lager.antall = butikk.produkt.lager.antall + 3;
+
+console.log(butikk.produkt.lager.antall);`,
+    fasit: "8",
+    poeng: 1,
+    vanskelighet: "medium",
+    hovedtema: "Objekter",
+    flagg: "FLAG{objects_nested_4}",
+  },
+
+  "objects-nested-5": {
+    id: "objects-nested-5",
+    tittel: "Objekter i objekter 5",
+    kortBeskrivelse: "kombinere dyp lesing",
+    beskrivelse: `Hva skriver denne koden ut?
+
+const konto = {
+  eier: {
+    navn: "Ida",
+    alder: 18
+  },
+  saldo: 900
+};
+
+console.log(konto.eier.navn + " har " + konto.saldo + "kr");`,
+    fasit: "Ida har 900kr",
+    poeng: 1,
+    vanskelighet: "medium",
+    hovedtema: "Objekter",
+    flagg: "FLAG{objects_nested_5}",
+  },
+  "lists-nested-1": {
+    id: "lists-nested-1",
+    tittel: "Lister i lister 1",
+    kortBeskrivelse: "lese element inne i liste",
+    beskrivelse: `Hva skriver denne koden ut?
+
+const tall = [
+  [1, 2],
+  [3, 4]
+];
+
+console.log(tall[1][0]);`,
+    fasit: "3",
+    poeng: 1,
+    vanskelighet: "medium",
+    hovedtema: "Arrays",
+    flagg: "FLAG{lists_nested_1}",
+  },
+
+  "lists-nested-2": {
+    id: "lists-nested-2",
+    tittel: "Lister i lister 2",
+    kortBeskrivelse: "endre verdi inni listeliste",
+    beskrivelse: `Hva skriver denne koden ut?
+
+const data = [
+  ["a", "b"],
+  ["c", "d"]
+];
+
+data[0][1] = "z";
+
+console.log(data[0][1]);`,
+    fasit: "z",
+    poeng: 1,
+    vanskelighet: "medium",
+    hovedtema: "Arrays",
+    flagg: "FLAG{lists_nested_2}",
+  },
+
+  "lists-nested-3": {
+    id: "lists-nested-3",
+    tittel: "Lister i lister 3",
+    kortBeskrivelse: "summere elementer",
+    beskrivelse: `Hva skriver denne koden ut?
+
+const grupper = [
+  [2, 2],
+  [1, 3]
+];
+
+let sum = grupper[0][0] + grupper[1][1];
+
+console.log(sum);`,
+    fasit: "5",
+    poeng: 1,
+    vanskelighet: "medium",
+    hovedtema: "Arrays",
+    flagg: "FLAG{lists_nested_3}",
+  },
+
+  "lists-nested-4": {
+    id: "lists-nested-4",
+    tittel: "Lister i lister 4",
+    kortBeskrivelse: "løkkke gjennom lister i lister",
+    beskrivelse: `Hva skriver denne koden ut?
+
+const tall = [
+  [1, 1],
+  [1, 1]
+];
+
+let teller = 0;
+
+for (let i = 0; i < tall.length; i++) {
+  for (let j = 0; j < tall[i].length; j++) {
+    teller = teller + tall[i][j];
+  }
+}
+
+console.log(teller);`,
+    fasit: "4",
+    poeng: 1,
+    vanskelighet: "medium",
+    hovedtema: "Arrays",
+    flagg: "FLAG{lists_nested_4}",
+  },
+
+  "lists-nested-5": {
+    id: "lists-nested-5",
+    tittel: "Lister i lister 5",
+    kortBeskrivelse: "kombinere push med nested lists",
+    beskrivelse: `Hva skriver denne koden ut?
+
+const matrise = [
+  [1, 2],
+  [3, 4]
+];
+
+matrise[0].push(5);
+
+console.log(matrise[0].length);`,
+    fasit: "3",
+    poeng: 1,
+    vanskelighet: "medium",
+    hovedtema: "Arrays",
+    flagg: "FLAG{lists_nested_5}",
+  },
+  "datatype-ctx-1": {
+    id: "datatype-ctx-1",
+    tittel: "Datatype-kontekst 1",
+    kortBeskrivelse: "Funksjon som returnerer liste",
+    beskrivelse: `Hva er datatypen til verdien som returneres?
+
+function hentBrukere() {
+  return ["Ola", "Mia", "Ali"];
+}
+
+let resultat = hentBrukere();`,
+    fasit: "object", // arrays er object
+    poeng: 1,
+    vanskelighet: "medium",
+    hovedtema: "Datatyper",
+    flagg: "FLAG{datatype_ctx_1}",
+  },
+  "datatype-ctx-2": {
+    id: "datatype-ctx-2",
+    tittel: "Datatype-kontekst 2",
+    kortBeskrivelse: "Returnere nested objekt",
+    beskrivelse: `Hva er datatypen til variabelen x?
+
+function hentStatus() {
+  return {
+    server: {
+      aktiv: true
+    }
+  };
+}
+
+let x = hentStatus().server;`,
+    fasit: "object",
+    poeng: 1,
+    vanskelighet: "medium",
+    hovedtema: "Datatyper",
+    flagg: "FLAG{datatype_ctx_2}",
+  },
+  "datatype-ctx-3": {
+    id: "datatype-ctx-3",
+    tittel: "Datatype-kontekst 3",
+    kortBeskrivelse: "Funksjon inni liste",
+    beskrivelse: `Hva er datatypen til elementet actions[1]?
+
+const actions = [
+  10,
+  function() { return "Hei"; }
+];`,
+    fasit: "function",
+    poeng: 1,
+    vanskelighet: "medium",
+    hovedtema: "Datatyper",
+    flagg: "FLAG{datatype_ctx_3}",
+  },
+  "datatype-ctx-4": {
+    id: "datatype-ctx-4",
+    tittel: "Datatype-kontekst 4",
+    kortBeskrivelse: "typeof resultat",
+    beskrivelse: `Hva er datatypen til variabelen resultat?
+
+let resultat = typeof 123;`,
+    fasit: "string",
+    poeng: 1,
+    vanskelighet: "easy",
+    hovedtema: "Datatyper",
+    flagg: "FLAG{datatype_ctx_4}",
+  },
+  "datatype-ctx-5": {
+    id: "datatype-ctx-5",
+    tittel: "Datatype-kontekst 5",
+    kortBeskrivelse: "Liste av objekter",
+    beskrivelse: `Hva er datatypen til variabelen p?
+
+const data = {
+  elever: [
+    { navn: "Oda" },
+    { navn: "Per" }
+  ]
+};
+
+let p = data.elever[0];`,
+    fasit: "object",
+    poeng: 1,
+    vanskelighet: "medium",
+    hovedtema: "Datatyper",
+    flagg: "FLAG{datatype_ctx_5}",
+  },
+  "datatype-ctx-6": {
+    id: "datatype-ctx-6",
+    tittel: "Datatype-kontekst 6",
+    kortBeskrivelse: "Returnere boolean",
+    beskrivelse: `Hva er datatypen til variabelen x?
+
+function erVoksen(alder) {
+  return alder >= 18;
+}
+
+let x = erVoksen(20);`,
+    fasit: "boolean",
+    poeng: 1,
+    vanskelighet: "easy",
+    hovedtema: "Datatyper",
+    flagg: "FLAG{datatype_ctx_6}",
+  },
+  "datatype-ctx-7": {
+    id: "datatype-ctx-7",
+    tittel: "Datatype-kontekst 7",
+    kortBeskrivelse: "Tall i nested struktur",
+    beskrivelse: `Hva er datatypen til variabelen score?
+
+const spillere = [
+  { navn: "Ida", poeng: 12 },
+  { navn: "Ali", poeng: 8 }
+];
+
+let score = spillere[1].poeng;`,
+    fasit: "number",
+    poeng: 1,
+    vanskelighet: "easy",
+    hovedtema: "Datatyper",
+    flagg: "FLAG{datatype_ctx_7}",
+  },
+  "datatype-ctx-8": {
+    id: "datatype-ctx-8",
+    tittel: "Datatype-kontekst 8",
+    kortBeskrivelse: "Ingen return",
+    beskrivelse: `Hva er datatypen til variabelen x?
+
+function gjørNoe() {
+  let a = 10;
+}
+
+let x = gjørNoe();`,
+    fasit: "undefined",
+    poeng: 1,
+    vanskelighet: "medium",
+    hovedtema: "Datatyper",
+    flagg: "FLAG{datatype_ctx_8}",
+  },
+  "datatype-ctx-9": {
+    id: "datatype-ctx-9",
+    tittel: "Datatype-kontekst 9",
+    kortBeskrivelse: "Symbol i objekt",
+    beskrivelse: `Hva er datatypen til variabelen key?
+
+const key = Symbol("secret");`,
+    fasit: "symbol",
+    poeng: 1,
+    vanskelighet: "medium",
+    hovedtema: "Datatyper",
+    flagg: "FLAG{datatype_ctx_9}",
+  },
+  "datatype-ctx-10": {
+    id: "datatype-ctx-10",
+    tittel: "Datatype-kontekst 10",
+    kortBeskrivelse: "BigInt return",
+    beskrivelse: `Hva er datatypen til verdien fra funksjonen?
+
+function lagID() {
+  return 9999999999999999999999n;
+}
+
+let id = lagID();`,
+    fasit: "bigint",
+    poeng: 1,
+    vanskelighet: "medium",
+    hovedtema: "Datatyper",
+    flagg: "FLAG{datatype_ctx_10}",
   },
 };
 
@@ -1042,6 +1506,7 @@ function getOppgaveListe() {
       hovedtema: o.hovedtema,
     }));
 }
+
 // Denne bruker vi for landingssiden (kun “trygg” info)
 
 module.exports = { getOppgave, getOppgaveListe };
